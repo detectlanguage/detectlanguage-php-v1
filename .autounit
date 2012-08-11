@@ -1,0 +1,15 @@
+# Prereqs:
+# * Ruby
+# * gem install watchr
+
+# Usage:
+# run watchr .autounit
+
+watch('tests/(.*)\.php') do |md|
+  puts "\e[H\e[2J"  #clear console
+  system("phpunit --stderr --bootstrap tests/bootstrap.php tests/tests.php")
+end
+watch('src/(.*)\.php') do |md|
+  puts "\e[H\e[2J"  #clear console
+  system("phpunit --stderr --bootstrap tests/bootstrap.php tests/tests.php")
+end
