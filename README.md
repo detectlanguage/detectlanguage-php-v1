@@ -10,7 +10,7 @@ You can get it by signing up at http://detectlanguage.com
 
 ### Load client 
 
-    require 'detectlanguage.php'
+    require_once 'detectlanguage.php';
 
     $detectlanguage = new DetectLanguage("YOUR API KEY");
 
