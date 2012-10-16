@@ -23,7 +23,7 @@ class DetectLanguage
   /**
    * API Client Version.
    */
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.1';
 
   /**
    * The API key.
@@ -73,7 +73,7 @@ class DetectLanguage
    *
    * @var string
    */
-  public $userAgent = 'detectlanguage-php-1.0.0';
+  public $userAgent = 'detectlanguage-php-1.0.1';
 
   
   /**

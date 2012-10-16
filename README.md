@@ -48,6 +48,58 @@ If you need just a language code you can use `simpleDetect`. It returns just the
 
     "es"
 
+### Batch detection
+
+It is possible to detect language of several texts with one request.
+This method is faster than doing one request per text.
+To use batch detection just pass array of texts to `detect` method.
+
+    $results = $detectlanguage->detect(array("Buenos dias señor", "Hello world"));
+
+#### Results
+
+Result is array of detections in the same order as the texts were passed.
+
+    Array
+    (
+        [0] => Array
+            (
+                [0] => stdClass Object
+                    (
+                        [language] => es
+                        [isReliable] => 
+                        [confidence] => 0.14018691588785
+                    )
+
+                [1] => stdClass Object
+                    (
+                        [language] => pt
+                        [isReliable] => 
+                        [confidence] => 0.083565459610028
+                    )
+
+            )
+
+        [1] => Array
+            (
+                [0] => stdClass Object
+                    (
+                        [language] => en
+                        [isReliable] => 
+                        [confidence] => 0.17017828200972
+                    )
+
+                [1] => stdClass Object
+                    (
+                        [language] => vi
+                        [isReliable] => 
+                        [confidence] => 0.13673655423883
+                    )
+
+            )
+
+    )
+
 ## License
 
 Detect Language API Client is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
