@@ -91,4 +91,40 @@ class DetectLanguageTestCase extends PHPUnit_Framework_TestCase {
     $this->assertEquals('lt', $result[1][0]->language, 
                         'To detect Lithuanian language.');
   }
+
+  public function testBatchDetectionOrderWithCurl() {
+    $this->__batchDetectionOrder('curl');
+  }
+
+  public function testBatchDetectionOrderWithStream() {
+    $this->__batchDetectionOrder('stream');
+  }
+
+  private function __batchDetectionOrder($engine) {
+    $request = array(
+      'привет',
+      'hello',
+      'привет',
+      'hello',
+      'привет',
+      'hello',
+      'привет',
+      'hello',
+      'привет',
+      'hello',
+      'привет'
+    );
+
+    $detectlanguage = new DetectLanguage(self::TEST_API_KEY);
+    $detectlanguage->requestEngine = $engine;
+
+    $result = $detectlanguage->detect($request);
+
+    foreach ($request as $i=>$phrase)
+    {
+      $language = $phrase == 'hello' ? 'en' : 'ru';
+      $this->assertEquals($language, $result[$i][0]->language);
+    }
+  }
+
 }
