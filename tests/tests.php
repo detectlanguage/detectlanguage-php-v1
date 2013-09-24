@@ -9,8 +9,8 @@
  */
 
 class DetectLanguageTestCase extends PHPUnit_Framework_TestCase {
-  const TEST_API_KEY = '24c3185fef623b537a4df60df0a8d4d9';
-  
+  const TEST_API_KEY = '93dfb956a294140a4370a09584af2ef6';
+
   public function testConstructor() {
     $detectlanguage = new DetectLanguage(self::TEST_API_KEY);
 
