@@ -1,14 +1,16 @@
-Detect Language API PHP Client [![Build Status](https://secure.travis-ci.org/detectlanguage/detectlanguage-php.png)](http://travis-ci.org/detectlanguage/detectlanguage-php)
+Language Detection API PHP Client 
 ========
 
 Detects language of given text. Returns detected language codes and scores.
 
-Before using Detect Language API client you setup your personal API key.
-You can get it by signing up at http://detectlanguage.com
+[![Build Status](https://secure.travis-ci.org/detectlanguage/detectlanguage-php.png)](http://travis-ci.org/detectlanguage/detectlanguage-php)
 
 ## Usage
 
-### Load client 
+### Configuration
+
+Before using Detect Language API client you have to setup your personal API key.
+You can get it by signing up at http://detectlanguage.com
 
     require_once 'detectlanguage.php';
 
