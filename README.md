@@ -1,5 +1,8 @@
-Language Detection API PHP Client 
+Language Detection API PHP Client (deprecated)
 ========
+
+THIS CLIENT IS DEPRECATED. YOU CAN FIND LATEST CLIENT HERE:
+https://github.com/detectlanguage/detectlanguage-php
 
 Detects language of given text. Returns detected language codes and scores.
 
