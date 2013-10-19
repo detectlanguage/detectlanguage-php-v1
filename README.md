@@ -3,7 +3,7 @@ Language Detection API PHP Client
 
 Detects language of given text. Returns detected language codes and scores.
 
-[![Build Status](https://secure.travis-ci.org/detectlanguage/detectlanguage-php-v1.png)](http://travis-ci.org/detectlanguage/detectlanguage-php)
+[![Build Status](https://secure.travis-ci.org/detectlanguage/detectlanguage-php-v1.png)](http://travis-ci.org/detectlanguage/detectlanguage-php-v1)
 
 ## Usage
 
